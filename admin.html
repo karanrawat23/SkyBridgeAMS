@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | SkyBridge AMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="admin">
+    <header class="site-header">
+        <a class="brand" href="index.html">SkyBridge AMS</a>
+        <nav class="nav-links">
+            <a class="nav-link nav-home" href="index.html">Home</a>
+            <a class="nav-link nav-dashboard" href="dashboard.html">Dashboard</a>
+            <button type="button" class="nav-button" data-action="logout">Logout</button>
+        </nav>
+    </header>
+
+    <main class="dashboard-layout">
+        <section class="panel summary-panel">
+            <div class="panel-head">
+                <p class="eyebrow">Admin Control Room</p>
+                <h1 id="adminTitle">Manage routes and monitor bookings</h1>
+                <p>Add new flights, remove outdated routes, and review recent booking activity.</p>
+            </div>
+
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <span class="stat-label">Managed Flights</span>
+                    <strong id="adminFlightCount">0</strong>
+                </article>
+                <article class="stat-card">
+                    <span class="stat-label">Registered Users</span>
+                    <strong id="adminUserCount">0</strong>
+                </article>
+                <article class="stat-card">
+                    <span class="stat-label">Total Bookings</span>
+                    <strong id="adminBookingCount">0</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-head">
+                <p class="eyebrow">Add Route</p>
+                <h2>Create a new flight entry</h2>
+            </div>
+
+            <form id="adminFlightForm" class="form-grid admin-grid">
+                <label>
+                    Flight Name
+                    <input type="text" id="flightName" placeholder="SkyBridge 404" required>
+                </label>
+                <label>
+                    From
+                    <input type="text" id="from" placeholder="Delhi" required>
+                </label>
+                <label>
+                    To
+                    <input type="text" id="to" placeholder="Chennai" required>
+                </label>
+                <label>
+                    Departure Time
+                    <input type="text" id="flightDeparture" placeholder="08:40 AM" required>
+                </label>
+                <label>
+                    Price
+                    <input type="number" id="price" placeholder="4500" min="1" required>
+                </label>
+                <button type="submit" class="button primary">Add Flight</button>
+            </form>
+
+            <p id="adminMessage" class="message" hidden></p>
+        </section>
+
+        <section class="panel">
+            <div class="panel-head">
+                <p class="eyebrow">Flight Inventory</p>
+                <h2>Current routes</h2>
+            </div>
+            <div id="adminFlights" class="card-grid"></div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-head">
+                <p class="eyebrow">Booking Activity</p>
+                <h2>Recent passenger bookings</h2>
+            </div>
+            <div id="adminBookings" class="booking-list"></div>
+        </section>
+    </main>
+
+    <script src="js.js"></script>
+</body>
+</html>

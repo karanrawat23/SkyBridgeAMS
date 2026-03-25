@@ -1,0 +1,26 @@
+[
+    {
+        "id": "SB101",
+        "name": "SkyBridge 101",
+        "from": "Delhi",
+        "to": "Mumbai",
+        "departure": "08:10 AM",
+        "price": 4500
+    },
+    {
+        "id": "SB202",
+        "name": "SkyBridge 202",
+        "from": "Dehradun",
+        "to": "Bengaluru",
+        "departure": "01:45 PM",
+        "price": 6200
+    },
+    {
+        "id": "SB303",
+        "name": "SkyBridge 303",
+        "from": "Delhi",
+        "to": "Goa",
+        "departure": "06:25 PM",
+        "price": 5200
+    }
+]

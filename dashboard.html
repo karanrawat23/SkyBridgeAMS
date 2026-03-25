@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Dashboard | SkyBridge AMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="dashboard">
+    <header class="site-header">
+        <a class="brand" href="index.html">SkyBridge AMS</a>
+        <nav class="nav-links">
+            <a class="nav-link nav-home" href="index.html">Home</a>
+            <a class="nav-link nav-admin" href="admin.html">Admin</a>
+            <button type="button" class="nav-button" data-action="logout">Logout</button>
+        </nav>
+    </header>
+
+    <main class="dashboard-layout">
+        <section class="panel summary-panel">
+            <div class="panel-head">
+                <p class="eyebrow">Passenger Dashboard</p>
+                <h1 id="dashboardTitle">Your flights at a glance</h1>
+                <p>Search routes, compare prices, and manage your bookings from here.</p>
+            </div>
+
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <span class="stat-label">Available Flights</span>
+                    <strong id="availableFlightCount">0</strong>
+                </article>
+                <article class="stat-card">
+                    <span class="stat-label">Your Bookings</span>
+                    <strong id="userBookingCount">0</strong>
+                </article>
+                <article class="stat-card">
+                    <span class="stat-label">Estimated Spend</span>
+                    <strong id="userSpendTotal">Rs 0</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel search-panel">
+            <div class="panel-head">
+                <p class="eyebrow">Find Flights</p>
+                <h2>Search and sort available routes</h2>
+            </div>
+            <form id="flightFilterForm" class="filter-grid">
+                <label>
+                    Search
+                    <input type="text" id="searchInput" placeholder="Flight, source, or destination">
+                </label>
+                <label>
+                    From
+                    <select id="fromFilter">
+                        <option value="all">All cities</option>
+                    </select>
+                </label>
+                <label>
+                    To
+                    <select id="toFilter">
+                        <option value="all">All destinations</option>
+                    </select>
+                </label>
+                <label>
+                    Sort By
+                    <select id="sortFilter">
+                        <option value="default">Recommended</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="name-asc">Flight Name: A to Z</option>
+                    </select>
+                </label>
+                <div class="filter-actions">
+                    <button type="submit" class="button primary">Apply</button>
+                    <button type="reset" class="button secondary">Reset</button>
+                </div>
+            </form>
+            <p id="dashboardMessage" class="message" hidden></p>
+        </section>
+
+        <section class="panel">
+            <div class="panel-head">
+                <p class="eyebrow">Routes</p>
+                <h2>Available flights</h2>
+            </div>
+            <div id="flights" class="card-grid"></div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-head">
+                <p class="eyebrow">Bookings</p>
+                <h2>Your booked flights</h2>
+            </div>
+            <div id="bookings" class="booking-list"></div>
+        </section>
+    </main>
+
+    <script src="js.js"></script>
+</body>
+</html>

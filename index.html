@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBridge Airline Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+    <header class="site-header">
+        <a class="brand" href="index.html">SkyBridge AMS</a>
+        <nav class="nav-links">
+            <a class="nav-link nav-login" href="login.html">Login</a>
+            <a class="nav-link nav-register" href="register.html">Register</a>
+            <a class="nav-link nav-dashboard" href="dashboard.html">Dashboard</a>
+            <a class="nav-link nav-admin" href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <main class="hero-layout">
+        <section class="hero-card">
+            <p class="eyebrow">Airline Management System</p>
+            <h1>Manage flights, bookings, and users from one clean workflow.</h1>
+            <p class="hero-copy">
+                This upgraded demo now supports registration, role-based login,
+                flight booking, booking history, and an admin panel to manage routes.
+            </p>
+            <div class="hero-highlights">
+                <span class="tag">Role-based access</span>
+                <span class="tag">Live booking history</span>
+                <span class="tag">Simple admin controls</span>
+            </div>
+            <div class="hero-actions">
+                <a class="button primary" href="register.html">Create Account</a>
+                <a class="button secondary" href="login.html">Sign In</a>
+            </div>
+            <div class="status-row">
+                <div class="status-pill" id="sessionStatus">Checking current session...</div>
+                <p class="hero-note">Use the seeded admin account or create a passenger profile in under a minute.</p>
+            </div>
+        </section>
+
+        <section class="panel spotlight-panel">
+            <div class="panel-head">
+                <p class="eyebrow">Live Snapshot</p>
+                <h2>Project highlights</h2>
+            </div>
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <span class="stat-label">Flights</span>
+                    <strong id="homeFlightCount">0</strong>
+                </article>
+                <article class="stat-card">
+                    <span class="stat-label">Users</span>
+                    <strong id="homeUserCount">0</strong>
+                </article>
+                <article class="stat-card">
+                    <span class="stat-label">Bookings</span>
+                    <strong id="homeBookingCount">0</strong>
+                </article>
+            </div>
+            <div class="feature-list">
+                <article class="feature-item">
+                    <h3>Smart entry flow</h3>
+                    <p>Users and admins are redirected to the right screen after login.</p>
+                </article>
+                <article class="feature-item">
+                    <h3>Search and sort</h3>
+                    <p>Passengers can filter routes by city or sort flights by price.</p>
+                </article>
+                <article class="feature-item">
+                    <h3>Admin controls</h3>
+                    <p>Admins can add new flights, review bookings, and delete routes.</p>
+                </article>
+            </div>
+            <div class="panel-note">
+                <strong>Ready-to-demo:</strong> the app ships with seeded routes and an admin account, so the experience does not start empty.
+            </div>
+        </section>
+    </main>
+
+    <section class="home-sections">
+        <section class="panel workflow-panel">
+            <div class="panel-head">
+                <p class="eyebrow">How It Flows</p>
+                <h2>Three simple steps from signup to seat booking</h2>
+            </div>
+            <div class="step-grid">
+                <article class="step-card">
+                    <span class="step-number">01</span>
+                    <h3>Create account</h3>
+                    <p>Passengers register once and immediately unlock the booking dashboard.</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-number">02</span>
+                    <h3>Find the right route</h3>
+                    <p>Search flights by city, compare prices, and sort routes by relevance.</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-number">03</span>
+                    <h3>Manage bookings</h3>
+                    <p>Booked routes stay visible in history and can be cancelled in one click.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel access-panel">
+            <div class="panel-head">
+                <p class="eyebrow">Quick Access</p>
+                <h2>Jump straight into the part you want to test</h2>
+            </div>
+            <div class="quick-link-grid">
+                <a class="link-card" href="register.html">
+                    <span class="link-kicker">New Passenger</span>
+                    <strong>Create a travel account</strong>
+                    <p>Register and start booking from the dashboard.</p>
+                </a>
+                <a class="link-card" href="login.html">
+                    <span class="link-kicker">Returning User</span>
+                    <strong>Open login screen</strong>
+                    <p>Sign in as a traveler or admin with existing credentials.</p>
+                </a>
+                <a class="link-card" href="dashboard.html">
+                    <span class="link-kicker">Traveler View</span>
+                    <strong>See the booking dashboard</strong>
+                    <p>Browse routes, sort results, and review current bookings.</p>
+                </a>
+                <a class="link-card" href="admin.html">
+                    <span class="link-kicker">Admin View</span>
+                    <strong>Manage flights and activity</strong>
+                    <p>Add routes, remove flights, and monitor booking traffic.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="panel cta-panel">
+            <div class="cta-layout">
+                <div>
+                    <p class="eyebrow">Ready To Explore</p>
+                    <h2>Open the demo as a passenger or switch to the admin control room.</h2>
+                    <p class="cta-copy">
+                        The setup is already seeded, so you can test search, booking, login flow,
+                        and route management without doing any extra setup first.
+                    </p>
+                </div>
+                <div class="cta-actions">
+                    <a class="button primary" href="dashboard.html">Open Dashboard</a>
+                    <a class="button secondary" href="admin.html">Open Admin Panel</a>
+                </div>
+            </div>
+            <div class="cta-badges">
+                <span class="tag">Seeded flights included</span>
+                <span class="tag">Admin login available</span>
+                <span class="tag">Works without backend setup</span>
+            </div>
+        </section>
+    </section>
+
+    <footer class="site-footer">
+        <div>
+            <a class="brand footer-brand" href="index.html">SkyBridge AMS</a>
+            <p class="footer-copy">A polished airline management demo for registration, booking, and admin route control.</p>
+        </div>
+        <div class="footer-links">
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="admin.html">Admin</a>
+        </div>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SkyBridge AMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+    <header class="site-header">
+        <a class="brand" href="index.html">SkyBridge AMS</a>
+        <nav class="nav-links">
+            <a class="nav-link nav-home" href="index.html">Home</a>
+            <a class="nav-link nav-register" href="register.html">Register</a>
+            <a class="nav-link nav-dashboard" href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="split-layout">
+        <section class="panel info-panel">
+            <p class="eyebrow">Demo Access</p>
+            <h1>Sign in as a traveler or admin.</h1>
+            <p>
+                Registered users are sent to the booking dashboard. The seeded admin account opens the
+                management panel.
+            </p>
+            <div class="credential-card">
+                <h2>Admin Credentials</h2>
+                <p>Email: <strong>admin@skybridge.com</strong></p>
+                <p>Password: <strong>admin123</strong></p>
+            </div>
+        </section>
+
+        <section class="form-card panel">
+            <div class="panel-head">
+                <p class="eyebrow">Login</p>
+                <h2>Welcome back</h2>
+            </div>
+
+            <form id="loginForm" class="form-grid">
+                <label>
+                    Email Address
+                    <input type="email" id="loginEmail" name="email" placeholder="you@example.com" required>
+                </label>
+                <label>
+                    Password
+                    <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required>
+                </label>
+                <button type="submit" class="button primary">Login</button>
+            </form>
+
+            <p id="loginMessage" class="message" hidden></p>
+            <p class="form-switch">New user? <a href="register.html">Create an account</a>.</p>
+        </section>
+    </main>
+
+    <script src="js.js"></script>
+</body>
+</html>

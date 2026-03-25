@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | SkyBridge AMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="register">
+    <header class="site-header">
+        <a class="brand" href="index.html">SkyBridge AMS</a>
+        <nav class="nav-links">
+            <a class="nav-link nav-home" href="index.html">Home</a>
+            <a class="nav-link nav-login" href="login.html">Login</a>
+            <a class="nav-link nav-admin" href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <main class="center-layout">
+        <section class="form-card panel">
+            <div class="panel-head">
+                <p class="eyebrow">Passenger Signup</p>
+                <h1>Create your travel account</h1>
+                <p>Register once and start booking flights from the dashboard.</p>
+            </div>
+
+            <form id="registerForm" class="form-grid">
+                <label>
+                    Full Name
+                    <input type="text" id="name" name="name" placeholder="Aarav Sharma" required>
+                </label>
+                <label>
+                    Email Address
+                    <input type="email" id="email" name="email" placeholder="aarav@example.com" required>
+                </label>
+                <label>
+                    Password
+                    <input type="password" id="password" name="password" placeholder="Minimum 6 characters" required>
+                </label>
+                <button type="submit" class="button primary">Register</button>
+            </form>
+
+            <p id="formMessage" class="message" hidden></p>
+            <p class="form-switch">Already registered? <a href="login.html">Login here</a>.</p>
+        </section>
+    </main>
+
+    <script src="js.js"></script>
+</body>
+</html>
